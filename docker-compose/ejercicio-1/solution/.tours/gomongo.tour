@@ -1,0 +1,52 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "gomongo",
+  "steps": [
+    {
+      "file": "gomongo/cmd/main.go",
+      "description": "First step is to locate where our xml file is located and get all the contents as a Person struct",
+      "line": 11
+    },
+    {
+      "file": "gomongo/pkg/fileManager.go",
+      "description": "First step is to open the file",
+      "line": 17
+    },
+    {
+      "file": "gomongo/pkg/fileManager.go",
+      "description": "Then we read all the content from it",
+      "line": 24
+    },
+    {
+      "file": "gomongo/pkg/fileManager.go",
+      "description": "Finally we save it to a people struct and return it",
+      "line": 29
+    },
+    {
+      "file": "gomongo/cmd/main.go",
+      "description": "Then we get a url where mongo is located and we connect to it",
+      "line": 15
+    },
+    {
+      "file": "gomongo/cmd/main.go",
+      "description": "And finally we insrt the people contents to the mongo data base",
+      "line": 17
+    },
+    {
+      "file": "gomongo/pkg/dbActions.go",
+      "description": "For it, we will use a testing database and use personas collections where our people documents will live",
+      "line": 18
+    },
+    {
+      "file": "gomongo/pkg/dbActions.go",
+      "description": "Then we iterate for each person we have and...",
+      "line": 26
+    },
+    {
+      "file": "gomongo/pkg/dbActions.go",
+      "description": "We insert its contents to the database",
+      "line": 28
+    }
+  ],
+  "ref": "solution"
+}

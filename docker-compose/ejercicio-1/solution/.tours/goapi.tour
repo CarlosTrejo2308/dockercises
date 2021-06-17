@@ -1,0 +1,57 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "GoApi",
+  "steps": [
+    {
+      "file": "goapi/cmd/main.go",
+      "description": "Here we create a router from Go Chi and add a logger middleware",
+      "line": 15
+    },
+    {
+      "file": "goapi/cmd/main.go",
+      "description": "Then we add a simple end point for the Home Page",
+      "line": 18
+    },
+    {
+      "file": "goapi/cmd/main.go",
+      "description": "Here we mount the people endpoints for it",
+      "line": 24
+    },
+    {
+      "file": "goapi/pkg/peopleResource.go",
+      "description": "In this part we hande the people and people/{id} endpoints",
+      "line": 17
+    },
+    {
+      "file": "goapi/pkg/peopleResource.go",
+      "description": "FOr the people endpoint, we call the List function...",
+      "line": 22
+    },
+    {
+      "file": "goapi/pkg/peopleResource.go",
+      "description": "in here we get all the people from the DB and write it on the response",
+      "line": 42
+    },
+    {
+      "file": "goapi/pkg/dbhandler.go",
+      "description": "We get first the mongo collection and we use find without a filter so we can get all the people documents",
+      "line": 41
+    },
+    {
+      "file": "goapi/pkg/peopleResource.go",
+      "description": "Then, here we handle the people/{id} endpoints, we use first a postCtx to get the id variable and then we send it to the Get function",
+      "line": 25
+    },
+    {
+      "file": "goapi/pkg/peopleResource.go",
+      "description": "First we get the id variable and, similar to the List function, we call another function \"GetById\" to get the document we need and write it to the response writter",
+      "line": 71
+    },
+    {
+      "file": "goapi/pkg/dbhandler.go",
+      "description": "First we get the connection, and the we use the Find function but this time with the filter of the id we need",
+      "line": 63
+    }
+  ],
+  "ref": "solution"
+}
