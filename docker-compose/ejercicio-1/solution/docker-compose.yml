@@ -39,7 +39,7 @@ services:
         container_name: persondb
         build:
             context: .
-            dockerfile: gomongo/build/Dockerfile.gomongo
+            dockerfile: gomongo/build/production.Dockerfile
         restart: "no"
         depends_on: 
             - db
