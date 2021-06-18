@@ -57,7 +57,7 @@ services:
         container_name: personapi
         build:
             context: .
-            dockerfile: goapi/build/Dockerfile.goapi
+            dockerfile: goapi/build/production.Dockerfile
         restart: always
         depends_on: 
             - db
