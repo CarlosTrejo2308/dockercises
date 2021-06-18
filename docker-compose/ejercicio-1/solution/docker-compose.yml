@@ -39,7 +39,7 @@ services:
         container_name: persondb
         build:
             context: .
-            dockerfile: Dockerfile.gomongo
+            dockerfile: gomongo/build/Dockerfile.gomongo
         restart: "no"
         depends_on: 
             - db
@@ -57,7 +57,7 @@ services:
         container_name: personapi
         build:
             context: .
-            dockerfile: Dockerfile.goapi
+            dockerfile: goapi/build/Dockerfile.goapi
         restart: always
         depends_on: 
             - db
